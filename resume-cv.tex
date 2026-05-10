@@ -2,7 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=1.45cm]{geometry}
+\usepackage[margin=1.2cm]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{hyperref}
@@ -14,14 +14,14 @@
 \setlength{\parindent}{0pt}
 \setlength{\columnsep}{0.8cm}
 \setlength{\columnseprule}{0.4pt}
-\setlength{\multicolsep}{4pt}
+\setlength{\multicolsep}{3pt}
 
 % Section styling
 \titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{0.45em}{0.25em}
+\titlespacing*{\section}{0pt}{0.4em}{0.2em}
 
 % Compact lists
-\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
 
 \hypersetup{
   colorlinks=true,
@@ -38,43 +38,32 @@
   \footnotesize
   \faEnvelope\ \href{mailto:falas.solon@ucy.ac.cy}{falas.solon@ucy.ac.cy}
   \quad|\quad
-  \faLinkedin\ \href{https://www.linkedin.com/in/solon-falas/}{linkedin.com}
+  \faLinkedin\ \href{https://www.linkedin.com/in/solon-falas/}{linkedin.com/in/solon-falas}
   \quad|\quad
   \faGraduationCap\ \href{https://scholar.google.com/citations?user=C1OPsJIAAAAJ}{Google Scholar}
   \quad|\quad
   \faOrcid\ \href{https://orcid.org/0000-0003-1182-4382}{ORCiD}
 \end{center}
 
-\vspace{0.2em}
+\vspace{0.15em}
 \small
 
 \begin{multicols}{2}
 
 \section*{Professional Summary}
-Machine learning engineer and data scientist with 7+ years of hands-on experience building, training, and evaluating ML models for real-world applications. Proven track record designing physics-informed neural networks, running end-to-end model development workflows — data preprocessing, feature engineering, hyperparameter optimization, and benchmarking — and delivering results through peer-reviewed publications. Comfortable across the full ML stack, from raw data and simulation outputs to reproducible, production-quality pipelines, using Python, TensorFlow, PyTorch, and standard data science tooling.
-
-\section*{Professional Strengths}
-\begin{itemize}
-    \item End-to-end ML model development, evaluation, and benchmarking
-    \item Data preprocessing, feature engineering, and pipeline design
-    \item Hyperparameter optimization and systematic experimentation
-    \item Statistical analysis and data-driven decision making
-    \item Clear technical communication for mixed audiences
-    \item Strong documentation and reproducibility practices
-\end{itemize}
+Machine learning engineer and data scientist with 7+ years of applied research experience in Python-based ML model development, deep learning, and data analysis. Designed and deployed physics-informed neural networks for real-world cyber-physical systems across the full ML lifecycle --- data preprocessing, feature engineering, model training (TensorFlow, PyTorch), hyperparameter optimisation (Optuna), and reproducible evaluation --- with 6 peer-reviewed publications including IEEE Transactions on Industrial Informatics.
 
 \section*{Technical Skills}
 \textbf{Programming:} Python, C/C++/C\#, \LaTeX\\[2pt]
-\textbf{ML / Data:} TensorFlow, PyTorch, scikit-learn, Optuna\\[2pt]
+\textbf{ML / Deep Learning:} TensorFlow, PyTorch, scikit-learn, Optuna\\[2pt]
 \textbf{Data Science:} pandas, NumPy, Matplotlib, Seaborn, Jupyter\\[2pt]
 \textbf{Tools:} Linux, Git, MATLAB, PowerWorld\\[2pt]
-\textbf{Domains:} ML model development, power systems, embedded systems, IoT security
+\textbf{Domains:} ML model development, data pipelines, power systems, IoT security
 
 \section*{Education}
 \textbf{Ph.D., Computer Engineering} (2017--2025)\\
 University of Cyprus, Nicosia, Cyprus\\
-\textit{Cross-Layer Physics-based Security for Cyber-Physical Systems}\\[4pt]
-
+\textit{Cross-Layer Physics-based Security for Cyber-Physical Systems}\\[3pt]
 \textbf{B.Sc., Computer Engineering} (2013--2017)\\
 University of Cyprus, Nicosia, Cyprus
 
@@ -86,59 +75,41 @@ University of Cyprus, Nicosia, Cyprus
 
 \section*{Hobbies \& Activities}
 \begin{itemize}
-  \item Personal finance, portfolio construction and management, risk analysis, investing
+  \item Personal finance, portfolio construction, risk analysis, investing
   \item Running, weightlifting, fitness, sports
-  \item Digital privacy enthusiast, DIY self-hosting services and smart-home projects
+  \item Digital privacy, DIY self-hosting, smart-home projects
 \end{itemize}
 
 \section*{Languages}
-Greek (Native)\\
-English (Fluent)
+Greek (Native) \quad|\quad English (Fluent)
 
-\section*{Professional Experience}
-\textbf{Research Associate -- Applied ML \& Embedded Security} (2025--Present)\\
+\section*{Work Experience}
+\textbf{Research Associate -- Machine Learning \& Security} (2025--Present)\\
 KIOS Research and Innovation Center of Excellence, University of Cyprus
 \begin{itemize}
-  \item Contributing to applied research and engineering activities in machine learning, cyber-physical systems, and embedded security.
+  \item Conducting applied ML research and engineering on cyber-physical systems and embedded security.
 \end{itemize}
 
-\textbf{Researcher -- ML Engineering \& Data Science} (2017--2025)\\
+\textbf{Researcher -- Machine Learning \& Data Science} (2017--2025)\\
 KIOS Research and Innovation Center of Excellence, University of Cyprus
 \begin{itemize}
-  \item Designed and trained physics-informed neural networks (PINNs) for power-system state estimation, embedding domain constraints as physics-based regularization to improve model generalization.
-  \item Built end-to-end Python data pipelines to ingest, preprocess, and curate multi-scenario power-system simulation datasets for model training and validation.
-  \item Ran systematic hyperparameter optimization with Optuna and evaluated models across noisy, faulted, and adversarially manipulated datasets, analyzing estimation-error metrics and robustness across diverse operating conditions.
-  \item Designed a modular secure firmware-update framework for embedded devices, combining hardware-based authentication with device-specific delivery to eliminate long-term secret storage.
-  \item Maintained reproducible experimental workflows with version-controlled code, documented configurations, and benchmarking reports using Python, TensorFlow, PyTorch, and MATLAB.
+  \item Designed and trained physics-informed neural networks (PINNs) for power-system state estimation, embedding AC power-flow constraints as physics-based regularisation to improve model generalisation across fault and attack scenarios.
+  \item Built end-to-end Python data pipelines to ingest, preprocess, and curate multi-scenario simulation datasets; ran systematic hyperparameter optimisation with Optuna and analysed estimation-error metrics across diverse operating conditions.
+  \item Maintained reproducible ML workflows with version-controlled code, documented configurations, and benchmarking reports using Python, TensorFlow, PyTorch, and MATLAB.
 \end{itemize}
 
 \textbf{Teaching Assistant -- Computer Engineering} (2017--2025)\\
 University of Cyprus
 \begin{itemize}
-  \item Supported lab-based courses including digital logic, microprocessors, operating systems, and VLSI CAD.
-  \item Provided hands-on technical guidance, prepared lab material, and assisted with grading and examination support.
-\end{itemize}
-
-\section*{Selected Technical Work}
-\textbf{Robust State Estimation for Power Systems}
-\begin{itemize}
-  \item Applied physics-informed ML to improve estimation reliability in the presence of bad data, faults, and adversarial inputs.
-\end{itemize}
-
-\textbf{Secure Firmware Updates for Embedded Devices}
-\begin{itemize}
-  \item Designed an end-to-end architecture for authenticated firmware delivery with hardware-assisted device binding and reduced secret-storage requirements.
+  \item Delivered lab instruction and technical support for digital logic, microprocessors, operating systems, and VLSI CAD courses.
 \end{itemize}
 
 \section*{Selected Publications}
 \footnotesize
 \begin{itemize}
-  \item S. Falas, M. Asprou, C. Konstantinou, and M. K. Michael, ``Robust Power System State Estimation Using Physics-Informed Neural Networks,'' \textit{IEEE Transactions on Industrial Informatics}, 2025.
-  \item S. Falas, M. Asprou, C. Konstantinou, and M. K. Michael, ``Data Manipulation Attack Mitigation in Power Systems Using Physics-Informed Neural Networks,'' \textit{IEEE CSR}, 2025.
-  \item S. Falas, M. Asprou, C. Konstantinou, and M. K. Michael, ``Physics-Informed Neural Networks for Accelerating Power System State Estimation,'' \textit{ISGT Europe}, 2023.
-  \item S. Falas, C. Konstantinou, and M. K. Michael, ``A Modular End-to-End Framework for Secure Firmware Updates on Embedded Systems,'' \textit{ACM Journal on Emerging Technologies in Computing Systems (JETC)}, 2022.
-  \item S. Falas, C. Konstantinou, and M. K. Michael, ``Physics-Informed Neural Networks for Securing Water Distribution Systems,'' \textit{IEEE ICCD}, 2020.
-  \item S. Falas, C. Konstantinou, and M. K. Michael, ``Hardware-Enabled Secure Firmware Updates in Embedded Systems,'' \textit{VLSI-SoC}, 2019.
+  \item S. Falas et al., ``Robust Power System State Estimation Using Physics-Informed Neural Networks,'' \textit{IEEE Transactions on Industrial Informatics}, 2025.
+  \item S. Falas et al., ``Data Manipulation Attack Mitigation in Power Systems Using Physics-Informed Neural Networks,'' \textit{IEEE CSR}, 2025.
+  \item S. Falas et al., ``A Modular End-to-End Framework for Secure Firmware Updates on Embedded Systems,'' \textit{ACM JETC}, 2022.
 \end{itemize}
 \normalsize
 
