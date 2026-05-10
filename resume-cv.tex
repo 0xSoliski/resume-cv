@@ -1,0 +1,102 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.6cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\setlength{\parindent}{0pt}
+
+% Section styling (compact)
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.45em}{0.25em}
+
+% Compact lists
+\setlist[itemize]{leftmargin=1.2em, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+\urlstyle{same}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  {\Large \textbf{Solon Falas}}\\[2pt]
+  \footnotesize
+  \faEnvelope\ \href{mailto:falas.solon@ucy.ac.cy}{falas.solon@ucy.ac.cy}
+  \quad|\quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/solon-falas/}{linkedin.com}
+  \quad|\quad
+  \faGraduationCap\ \href{https://scholar.google.com/citations?user=C1OPsJIAAAAJ}{Google Scholar}
+  \quad|\quad
+  \faOrcid\ \href{https://orcid.org/0000-0003-1182-4382}{ORCiD}
+\end{center}
+
+\vspace{-0.2em}
+
+\small
+
+\section*{Professional Summary}
+Applied AI/ML for cyber-physical systems (CPS) with emphasis on physics-informed learning for power-system state estimation and embedded/IoT security (secure firmware updates, device authentication, and PUF-based approaches).
+
+\section*{Technical Focus}
+\begin{itemize}
+    \item Physics-informed ML (PINNs): constraint embedding (AC power flow), optimization, and model selection
+    \item Power-system state estimation: robustness to noise, faults, and adversarial sensor data
+    \item Embedded security: secure firmware updates; device authentication; keyless/PUF-based designs
+\end{itemize}
+
+\section*{Education}
+\textbf{Ph.D., Computer Engineering}, University of Cyprus (Nicosia, Cyprus) \hfill 2017--2025\\
+Dissertation: \textit{Cross-Layer Physics-based Security for Cyber-Physical Systems}\\[2pt]
+\textbf{B.Sc., Computer Engineering}, University of Cyprus (Nicosia, Cyprus) \hfill 2013--2017
+
+\section*{Honors and Awards}
+\begin{itemize}
+  \item \textbf{Best Computer Engineering Undergraduate Dissertation}, University of Cyprus \hfill 2017\\
+  \textit{Exploring Adaptive Routing Algorithms in Networks-on-Chips}.
+  \item \textbf{Ph.D. Scholarship}, KIOS Research and Innovation Center of Excellence, University of Cyprus \hfill 2017--2025
+\end{itemize}
+
+\section*{Experience}
+\textbf{Doctoral Researcher (CPS/ML \& Embedded Security)} \hfill 2017--2025\\
+KIOS Research and Innovation Center of Excellence, University of Cyprus
+\begin{itemize}
+  \item Built physics-informed neural network (PINN) state estimators by embedding AC power-flow constraints; improved robustness to noise, faults, and malicious sensor manipulation.
+  \item Designed a hardware-assisted secure firmware update framework leveraging Public/Differential Public PUFs for device authentication and device-specific update delivery without long-term secret storage.
+  \item Published peer-reviewed work (journals, book chapter, conferences) and presented results to technical audiences.
+\end{itemize}
+
+\textbf{Teaching Assistant (ECE)}, University of Cyprus \hfill 2017--2025\\
+Supported lab-based/systems courses (digital logic, microprocessors, operating systems, VLSI CAD); lab support, grading, and exam preparation.
+
+\section*{Selected Publications}
+\footnotesize
+\begin{itemize}
+  \item S. Falas, M. Asprou, C. Konstantinou, and M. K. Michael, ``Robust Power System State Estimation Using Physics-Informed Neural Networks,'' \textit{IEEE Transactions on Industrial Informatics}, Oct. 2025.
+  \item S. Falas, M. Asprou, C. Konstantinou, and M. K. Michael, ``Data Manipulation Attack Mitigation in Power Systems Using Physics-Informed Neural Networks,'' \textit{IEEE CSR}, 2025.
+  \item S. Falas, C. Konstantinou, and M. K. Michael, ``A modular end-to-end framework for secure firmware updates on embedded systems,'' \textit{ACM Journal on Emerging Technologies in Computing Systems (JETC)}, 2021.
+  \item S. Falas, C. Konstantinou, and M. K. Michael, ``Hardware-enabled secure firmware updates in embedded systems,'' in \textit{VLSI-SoC: New Technology Enabler}, Springer, 2020.
+\end{itemize}
+\normalsize
+
+\section*{Skills}
+\textbf{Peer reviewer:} IEEE Consumer Electronics Magazine; IEEE Internet of Things Journal; IEEE Transactions on Industrial Informatics; IEEE Transactions on Power Systems\\
+\textbf{Programming:} Python, C/C++/C\#, HDL (VHDL/Verilog), \LaTeX \quad
+\textbf{ML:} TensorFlow, Optuna\\
+\textbf{Tools:} Linux, MATLAB, Git, PowerWorld \quad
+\textbf{Domains:} physics-informed neural networks, embedded/IoT security \\
+
+\textbf{Languages:} Greek (Native), English (Fluent)
+
+\end{document}
