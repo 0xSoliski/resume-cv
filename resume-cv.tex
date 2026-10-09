@@ -1,6 +1,5 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[margin=1.2cm]{geometry}
 \usepackage{enumitem}
@@ -10,6 +9,10 @@
 \usepackage{microtype}
 \usepackage{xcolor}
 \usepackage{multicol}
+\usepackage{accsupp}
+
+% Decorative icon hidden from text extraction (ATS parsers, AI crawlers)
+\newcommand{\icon}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
 
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
@@ -30,6 +33,11 @@
 \setlist[itemize]{leftmargin=1.2em, itemsep=3pt, topsep=3pt, parsep=0pt, partopsep=0pt}
 
 \hypersetup{
+  pdftitle={Solon Falas -- Machine Learning Engineer / Data Scientist (Ph.D.) -- CV},
+  pdfauthor={Solon Falas},
+  pdfsubject={Resume of Solon Falas, Ph.D.: Machine Learning Engineer and Data Scientist specialising in physics-informed deep learning, robust ML, and cyber-physical systems security},
+  pdfkeywords={Solon Falas, Machine Learning Engineer, Data Scientist, ML Engineer, AI Engineer, Research Scientist, Ph.D. Computer Engineering, Deep Learning, Physics-Informed Neural Networks, PINN, Adversarial Robustness, False Data Injection Attacks, State Estimation, PyTorch, TensorFlow, scikit-learn, Optuna, Python, pandas, NumPy, Cyber-Physical Systems, Smart Grid, Power Systems, IoT Security, Embedded Security, LLM, Agentic Workflows, University of Cyprus, KIOS, Nicosia, Cyprus},
+  pdflang={en},
   colorlinks=true,
   linkcolor=black,
   urlcolor=blue
@@ -40,17 +48,18 @@
 \pagestyle{empty}
 
 \begin{center}
-  {\Large \textbf{Solon Falas}}\\[2pt]
+  {\Large \textbf{Solon Falas, Ph.D.}}\\[3pt]
+  {\normalsize Machine Learning Engineer \textbar\ Data Scientist \textbar\ Physics-Informed \& Robust Deep Learning \textbar\ Nicosia, Cyprus}\\[3pt]
   \footnotesize
-  \faEnvelope\ \href{mailto:falas.solon@ucy.ac.cy}{falas.solon@ucy.ac.cy}
+  \icon{\faEnvelope}\ \href{mailto:falas.solon@ucy.ac.cy}{falas.solon@ucy.ac.cy}
   \quad|\quad
-  \faGlobe\ \href{https://about.falas.xyz}{about.falas.xyz}
+  \icon{\faGlobe}\ \href{https://about.falas.xyz}{about.falas.xyz}
   \quad|\quad
-  \faLinkedin\ \href{https://www.linkedin.com/in/solon-falas/}{linkedin.com/in/solon-falas}
+  \icon{\faLinkedin}\ \href{https://www.linkedin.com/in/solon-falas/}{linkedin.com/in/solon-falas}
   \quad|\quad
-  \faGraduationCap\ \href{https://scholar.google.com/citations?user=C1OPsJIAAAAJ}{Google Scholar}
+  \icon{\faGraduationCap}\ \href{https://scholar.google.com/citations?user=C1OPsJIAAAAJ}{Google Scholar}
   \quad|\quad
-  \faOrcid\ \href{https://orcid.org/0000-0003-1182-4382}{ORCiD}
+  \icon{\faOrcid}\ \href{https://orcid.org/0000-0003-1182-4382}{ORCiD}
 \end{center}
 
 \vspace{0.5em}
@@ -59,15 +68,16 @@
 \begin{multicols}{2}
 
 \section*{Professional Summary}
-Machine Learning Engineer / Data Scientist with a PhD in Computer Engineering, 7+ years applied research experience, and ML-focused work since 2020--2021. Designed and deployed physics-informed neural networks for real-world cyber-physical systems across the full ML lifecycle --- data preprocessing, feature engineering, model training (TensorFlow, PyTorch), hyperparameter optimisation (Optuna), and reproducible evaluation.
+ML Engineer and Data Scientist (Ph.D., Computer Engineering) with 7+ years of applied research, including 5+ years building deep-learning models. Specialise in \textbf{physics-informed neural networks} and \textbf{adversarially robust ML} for safety-critical cyber-physical systems. Own the full ML lifecycle --- data pipelines, feature engineering, training (\textbf{PyTorch, TensorFlow}), hyperparameter optimisation (Optuna), and evaluation --- with first-author results in \textit{IEEE Transactions on Industrial Informatics}.
 
 \section*{Technical Skills}
-\textbf{Programming:} Python, Bash/Shell, C/C++/C\#, \LaTeX\\[4pt]
-\textbf{ML / Deep Learning:} TensorFlow, PyTorch, scikit-learn, Optuna\\[4pt]
+\textbf{Programming:} Python, Bash/Shell, C/C++/C\#, LaTeX\\[4pt]
+\textbf{ML Methods:} Deep learning, physics-informed neural networks (PINNs), regression \& state estimation, adversarial robustness, model evaluation \& benchmarking\\[4pt]
+\textbf{ML Frameworks:} PyTorch, TensorFlow, scikit-learn, Optuna\\[4pt]
 \textbf{Data Science:} pandas, NumPy, Matplotlib, Seaborn, Jupyter\\[4pt]
 \textbf{Tools:} Linux, Git, MATLAB, PowerWorld\\[4pt]
 \textbf{AI Tooling:} Claude, Codex, GitHub Copilot, LLM-assisted R\&D, agentic workflows, spec/test-driven development, prompt engineering\\[4pt]
-\textbf{Domains:} ML model development, data pipelines, power systems, IoT security
+\textbf{Domains:} Cyber-physical systems, smart grid \& power systems, IoT \& embedded security
 
 \section*{Education}
 \textbf{Ph.D., Computer Engineering} (2017--2025)\\
@@ -96,15 +106,16 @@ Greek (Native) \quad|\quad English (Fluent)
 \textbf{Research Associate -- Machine Learning \& Security} (2025--Present)\\
 KIOS Research and Innovation Center of Excellence, University of Cyprus
 \begin{itemize}
-  \item Conducting applied ML research and engineering on cyber-physical systems and embedded security.
+  \item Conduct applied ML research and engineering on robust, physics-informed models for cyber-physical systems and embedded security.
 \end{itemize}
 
 \textbf{Researcher -- Machine Learning \& Data Science} (2017--2025)\\
 KIOS Research and Innovation Center of Excellence, University of Cyprus
 \begin{itemize}
-  \item Built and evaluated physics-informed neural networks (PINNs) for power-system state estimation under noisy, faulty, and adversarial operating conditions, embedding AC power-flow constraints as physics-based regularisation to improve generalisation.
+  \item Built and evaluated physics-informed neural networks (PINNs) for power-system state estimation under noisy, faulty, and adversarial operating conditions, embedding AC power-flow constraints as physics-based regularisation to improve generalisation; published in \textit{IEEE TII} (2025).
   \item Built end-to-end Python data pipelines to ingest, preprocess, and curate multi-scenario simulation datasets; ran systematic hyperparameter optimisation with Optuna and analysed estimation-error metrics across diverse operating conditions.
   \item Maintained reproducible ML workflows with version-controlled code, documented configurations, and benchmarking reports using Python, TensorFlow, PyTorch, and MATLAB.
+  \item Designed an end-to-end secure firmware-update framework for embedded/IoT devices (\textit{ACM JETC}).
 \end{itemize}
 
 \textbf{Teaching Assistant -- Computer Engineering} (2017--2025)\\
@@ -123,8 +134,8 @@ Developed a physics-informed neural network that stays robust to false data inje
 \footnotesize
 \begin{itemize}
   \item S. Falas et al., ``Robust Power System State Estimation Using Physics-Informed Neural Networks,'' \textit{IEEE Transactions on Industrial Informatics}, 2025.
-  \item S. Falas et al., ``Data Manipulation Attack Mitigation in Power Systems Using Physics-Informed Neural Networks,'' \textit{IEEE CSR}, 2025.
-  \item S. Falas et al., ``A Modular End-to-End Framework for Secure Firmware Updates on Embedded Systems,'' \textit{ACM JETC}, 2022.
+  \item S. Falas et al., ``Data Manipulation Attack Mitigation in Power Systems Using Physics-Informed Neural Networks,'' \textit{IEEE Int. Conf. on Cyber Security and Resilience (CSR)}, 2025.
+  \item S. Falas et al., ``A Modular End-to-End Framework for Secure Firmware Updates on Embedded Systems,'' \textit{ACM J. on Emerging Technologies in Computing Systems}, 2022.
 \end{itemize}
 \normalsize
 
