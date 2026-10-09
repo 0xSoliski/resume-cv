@@ -25,8 +25,8 @@ Machine Learning Engineer and Data Scientist based in Nicosia, Cyprus, with a Ph
 
 ## Repository
 
-LaTeX source for the CV. `main.tex` is the entry point and inputs `resume-cv.tex`. A GitHub Actions workflow compiles it with LuaLaTeX on every push to `main` and commits the resulting `main.pdf`.
+LaTeX source for the CV. `main.tex` is the entry point and inputs `resume-cv.tex`. `main.pdf` is built locally and committed alongside source changes.
 
-Build locally:
+Build with LuaLaTeX:
 
     latexmk -lualatex main.tex
